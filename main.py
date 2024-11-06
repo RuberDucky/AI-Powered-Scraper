@@ -134,12 +134,9 @@ async def ask_question(question: Question):
         return await ask_openai(question.question)
     elif question.source == "Google":
         return await search_google(question.question)
-    elif question.source == "Gemini":
-        logging.info("Querying Gemini API.")
-        return await ask_gemini(question.question)  # Assuming you have implemented this function
     else:
         logging.error("Invalid source specified.")
-        raise HTTPException(status_code=400, detail="Invalid source specified. Use 'OpenAI', 'Google', or 'Gemini'.")
+        raise HTTPException(status_code=400, detail="Invalid source specified. Use 'OpenAI' or 'Google' ")
 
 if __name__ == "__main__":
     import uvicorn
