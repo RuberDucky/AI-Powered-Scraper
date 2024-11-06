@@ -44,8 +44,8 @@ This project is an AI-powered web scraping and query refinement tool that levera
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ai-powered-scraper.git
-cd ai-powered-scraper
+git clone https://github.com/RuberDucky/AI-Powered-Scraper.git
+cd AI-Powered-Scraper
 ```
 
 2. Install the required dependencies:
